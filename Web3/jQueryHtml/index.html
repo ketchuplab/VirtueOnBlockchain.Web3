@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>網上佈施，拜佛祈福，積德行善，廣種福田，永保平安，功德上鍊，永久可查</title>
+	</head>
+
+	<body>
+		<div class="top-notification">
+			<h1 class="glowing-text">網上佈施，拜佛祈福，積德行善，廣種福田，永保平安，功德上鍊，永久可查</h1>
+		</div>
+		<header>
+			<div class="bubble-container"></div>
+		</header>
+		<div class="bar">
+			<nav>
+				<ul>
+					<li>
+						<a data-href="bs">佈施祈福</a>
+					</li>
+					<li>
+						<a data-href="gdb">佈施功德榜</a>
+					</li>
+					<li>
+						<a data-href="fq">開光法器</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="main">
+			<section id="bs" class="content" style="display: block;">
+				<div class="top">佈施祈福</div>
+				<div class="center">
+					<div class="alert">
+						銘刻您的姓名、祈福詞及佈施金額！願施主：大福大利、福生無量！
+					</div>
+					<div class="start">
+						<span class="btn-go">連線錢包開始祈佈施祈福</span>
+					</div>
+					<div class="gd">
+						<div class="an">功德+1</div>
+						<div class="bg">
+							<div class="font">功德</div>
+						</div>
+					</div>
+					<div class="run">
+						<form class="form">
+							<label for="wallet">施主錢包：</label>
+							<input class="input" type="text" id="wallet" name="wallet" readonly="readonly" required />
+							<br />
+							<label for="name">施主姓名：</label>
+							<input class="input" type="text" id="name" name="name" required />
+							<br />
+							<label for="money">佈施金額：</label>
+							<input class="input" type="number" id="money" name="money" min="0.01" required />
+							<br />
+							<label for="content"> 祈 福 詞：</label>
+							<input class="input" type="text" id="content" name="content" required />
+							<br />
+							<input id="btn-bs" class="btn" type="button">
+						</form>
+					</div>
+				</div>
+				<div class="bottom"></div>
+			</section>
+			<section id="gdb" class="content" style="display: none;">
+				<div class="top">今日佈施功德榜</div>
+				<div class="center">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>佈施人</th>
+								<th>佈施金額</th>
+							</tr>
+						</thead>
+						<tbody id="table">
+							<!--
+							<tr>
+								<td>陳佩玉居士</td>
+								<td>2.36 ETH</td>
+							</tr>
+							-->
+						</tbody>
+					</table>
+				</div>
+				<div class="bottom"></div>
+			</section>
+			<section id="fq" class="content" style="display: none;">
+				<div class="top">開光法器</div>
+				<div class="center">
+					<div class="alert">
+						由法師開光，根據佈施排行與佛緣贈送
+					</div>
+					<div class="product-container">
+						<img src="img/x.jpg" alt="蓮花銅磬" class="product-image">
+						<h2 class="product-name">蓮花銅磬</h2>
+						<p class="product-description">
+							在佛教中，磬是一種重要的儀器，主要用於冥想、禪修和宗教儀式。敲擊磬的聲音有助於冥想者集中注意力，達到內心的寧靜與平靜。此外，磬也在儀式中用於表示儀式的開始和結束，或在誦經和祈禱期間提供音樂背景。它還可以用來傳授教義和提醒聽眾注意，以強調特定的佛教思想。總之，磬在佛教中被視為一種有著精神意義的工具，有助於幫助人們實現冥想、儀式和宗教實踐中的內在平靜、警覺和專注。
+						</p>
+						<p class="additional-info">
+							已由法師開光，佈施最多的施主可獲得 </p>
+					</div>
+					<div class="product-container">
+						<img src="img/m.jpg" alt="功德木魚" class="product-image">
+						<h2 class="product-name">功德木魚</h2>
+						<p class="product-description">
+							在佛教中，木魚是一種重要的樂器，主要用於冥想、唸佛、宗教儀式和教義傳承。敲擊木魚的聲音有助於修行者保持警覺和專注，尤其在唸佛修行中，每次敲擊代表一遍佛號，協助維持連貫的唸佛節奏。此外，木魚也常在寺廟儀式中使用，僧侶和修行者用它進行誦經和祈禱，以示虔誠。同時，木魚的聲音也被用來強調特定的教義或提醒人們保持警覺，以協助進入內心平靜的狀態。總之，木魚在佛教中被視為一種有助於冥想、宗教儀式和佛法傳授的重要工具，其聲音有助於引導信眾和修行者進入內心的寧靜與虔誠。
+						</p>
+						<p class="additional-info">
+							已由法師開光，佈施施主中隨緣獲得
+						</p>
+					</div>
+				</div>
+				<div class="bottom"></div>
+			</section>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/ethers.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/script.js" charset="utf-8"></script>
+
+</html>
